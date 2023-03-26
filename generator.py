@@ -10,6 +10,9 @@ class generator():
 
     def empty_text(self):
         self.text_ls.clear()
+
+    def add_suffix(self, suffix, text):
+        return suffix + " " + text
     
 if __name__ == '__main__':
     text_generator = generator()
