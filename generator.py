@@ -10,7 +10,12 @@ class generator():
 
     def empty_text(self):
         self.text_ls.clear()
+
+    def add_suffix(self, suffix, text):
+        return text + " " + suffix
     
+    def add_prefix(self, prefix, text):
+        return prefix + " " + text
 if __name__ == '__main__':
     text_generator = generator()
     text_generator.echo_text("This is a demo text")
