@@ -7,8 +7,10 @@ class generator():
             
     def add_text(self, text):
         self.text_ls.append(text)
-    
 
+    def empty_text(self):
+        self.text_ls.clear()
+    
 if __name__ == '__main__':
     text_generator = generator()
     text_generator.echo_text("This is a demo text")
